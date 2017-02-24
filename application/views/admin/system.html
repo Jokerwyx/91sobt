@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . '/style/admin/css/public.css' ?>">
+	<title>Document</title>
+	<style type="text/css">
+		span{
+			color: #f00;
+		}
+	</style>
+</head>
+<body>
+	<form action="<?php echo site_url('admin/category/system') ?>" method="POST">
+	<table class="table">
+		<tr>
+			<td class="th" colspan="10">系统设置</td>
+		</tr>
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">网站域名</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_domain"
+			type="text" size="80" value="<?php echo $system[0]['site_domain'];?>" /><?php echo form_error("site_domain")?></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_domain</td>
+	</tr>
+
+	<tr>
+	
+		<td width="100" align="left" bgcolor="#FFFFFF">网站名</td>
+		<td width="579" align="left" bgcolor="#FFFFFF"><label> <input
+			name="site_name" type="text" size="80" value="<?php echo $system[0]['site_name'];?>">
+		</label></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_name</td>
+	</tr>
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">title</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_title"
+			type="text" size="80" value="<?php echo $system[0]['site_title'];?>" /></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_title</td>
+	</tr>
+	<tr>
+		
+		<td align="left" bgcolor="#FFFFFF">keywords</td>
+		<td align="left" bgcolor="#FFFFFF"><textarea name="site_keywords"
+			cols="35" style='border: 1px solid #94BBE2; width: 100%;'><?php echo $system[0]['site_keywords'];?></textarea></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_keywords</td>
+	</tr>
+	<tr>
+		
+		<td align="left" bgcolor="#FFFFFF">dis</td>
+		<td align="left" bgcolor="#FFFFFF"><textarea name="site_dis"
+			cols="35" style='border: 1px solid #94BBE2; width: 100%;'
+			onpropertychange='this.style.posHeight=this.scrollHeight'
+			onfocus='this.style.posHeight=this.scrollHeight'; ><?php echo $_SERVER['DOCUMENT_ROOT'];?></textarea></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_dis</td>
+	</tr>
+
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">认证title</td>
+		<td align="left" bgcolor="#FFFFFF">
+		
+			<input name="site_xinyu"
+			type="text" size="10" value="<?php echo $system[0]['site_xinyu'];?>"> 
+			
+			</td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_xinyu</td>
+	</tr>
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">备案号</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_beian"
+			type="text" size="80" value="<?php echo $system[0]['site_beian'];?>"></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_beian</td>
+	</tr>
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">QQ</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_qq"
+			type="text" size="80" value="<?php echo $system[0]['site_qq'];?>"></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_qq</td>
+	</tr>
+
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">微博</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_weibo"
+			type="text" size="80" value="<?php echo $system[0]['site_weibo'];?>"></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_weibo</td>
+	</tr>
+
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">计数器</td>
+		<td align="left" bgcolor="#FFFFFF"><textarea name="site_count"
+			cols="35" style='border: 1px solid #94BBE2; width: 100%;'><?php echo $system[0]['site_count'];?></textarea></td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_count</td>
+	</tr>
+
+	<tr>
+
+		<td align="left" bgcolor="#FFFFFF">禁用关键词</td>
+		<td align="left" bgcolor="#FFFFFF"><input name="site_keymax"
+			type="text" size="80" value="<?php echo $system[0]['site_keymax'];?>">(多个用|分开)</td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_keymax</td>
+	</tr>
+	
+	<tr>
+	
+		<td align="left" bgcolor="#FFFFFF">开关系统</td>
+		<td align="left" bgcolor="#FFFFFF">
+		<a href="">打开</a>
+		<a href="">关闭</a>
+		 </td>
+		<td align="left" bgcolor="#FFFFFF" colspan="2">site_open</td>
+	</tr>
+	<tr>
+	
+		<td colspan="4" align="center" bgcolor="#FFFFFF"><a
+			href=""></a>
+		<table width="99%" border="0" cellpadding="0" cellspacing="1"
+			bgcolor="#ECE9FE">
+		
+
+<tr>
+		<td><input type="submit" value="提交" class="input_button"/>
+	<input type="reset" value="清空" class="input_button"/>	</td>
+</tr>
+</table>
+	</form>
+
+	</table>
+	</form>
+</body>
+</html>

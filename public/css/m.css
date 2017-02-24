@@ -1,0 +1,17 @@
+* {
+	font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif;
+  	font-size: 15px;
+}
+.nextpage {
+	margin-top: 30px;
+}
+.btinfo {
+	word-wrap: break-word;
+}
+.magnetic {
+	word-wrap: break-word;
+}
+.link {
+	background-color: #333333;
+	color: #ffffff;
+}

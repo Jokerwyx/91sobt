@@ -1,0 +1,33 @@
+﻿*{margin:0;padding:0;border:none;background:none;font-family:"Microsoft Yahei","微软雅黑","SimHei","黑体";}
+a{text-decoration:none}
+html,body{overflow:hidden;width:100%;height:100%;background:#f6f6f6;}
+h1,.con{display:block;}
+.box{text-align:center;width:100%;padding-top:0!important;margin-top:0!important;top:92px;}
+.index_box{height:70px;top:50%;margin-top:-35px!important;}
+.con{width:470px; margin:auto;}
+#header,h1,h2,.box{ position:absolute;}
+
+h1{color:#999;height:50px;background:#eee;width:100%;border-bottom:1px solid #ddd;text-align:center;font:28px/50px Arial bold;top:41px;}
+h2{color:#999;height:50px;background:#f2f2f2;width:100%;border-top:1px solid #ddd;text-align:center;font-size:18px;line-height:50px;font-weight:normal;bottom:0;}
+
+#s_val{font-size:18px;text-align:center;color:#888;width:350px;height:60px;line-height:60px;background:#fff;border:4px solid #0099CC;}
+#search_btn:hover{background:#00a5dc;}
+#cnzz_stat_icon_1000124335{display:none;}
+
+#header{width:100%;height:40px;top:0;background:#3bcdf1;line-height:40px;border-bottom:1px solid #36bdde;}
+#header .upbt{float:left;}
+#header .upbt span{ color:#fff; font-size:18px; font-weight:bold;margin:0 15px;}
+
+#header_nav{float:right;}
+#header_nav a{color:#fff;display:inline-block;padding:0 20px;background:#2ab6d9;}
+#header_nav a:hover{background:#70d228;}
+#header_nav div{float:left;}
+
+
+#loading{width:180px;height:160px;position:absolute;top:50%;left:50%; margin-top:-80px;margin-left:-90px;background:#ededed; display:block; overflow:hidden;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;border:1px solid #ccc;display:none;z-index:9999999; text-align:center;}
+#loading span{ display:block; overflow:hidden;width:65px;height:65px; background:url(http://www.xhub.cn/cache/loading.gif); margin:20px auto;}
+#loading i{text-align:center; color:#0d7ecd; font-style:normal;display:block;}
+/*#ad_bottom{z-index:999999;position:fixed; top:0;left:0;width:100%;height:100%;display:block; overflow:hidden;}*/
+#index_ad_top{margin:auto;margin-top:92px;width:100%;text-align:center;}
+
+#tixing{line-height:60px;padding-top:20px;margin-top:15px;color:#2ab6d9;}

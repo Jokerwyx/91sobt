@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . '/style/admin/css/public.css' ?>">
+	<title>Document</title>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<td class="th" colspan="10">清除缓存</td>
+		</tr>
+
+		<tr>
+			<td style='text-align:center;'>文件缓存</td>
+			<td style='text-align:center;'>采集缓存</td>
+			<td style='text-align:center;'>数据冗余</td>
+		</tr>
+		
+		<tr>
+		<form action='<?php echo site_url('admin/article/clearcachefile') ?>' methon='post'>
+			<td style='text-align:center;'><input type="submit" value="开始清除" class="input_button"/></td>
+
+		</form>
+		<form action='<?php echo site_url('admin/article/clearcachecurl') ?>' methon='post'>
+			<td style='text-align:center;'><input type="submit" value="开始清除" class="input_button"/></td>
+		</form>
+		<form action='<?php echo site_url('admin/article/clearcachehashinfo') ?>' methon='post'>
+			<td style='text-align:center;'><input type="submit" value="开始清除" class="input_button"/></td>
+		</form>
+		</tr>
+	<tr>
+			<td style='text-align:center;'>建议定期清除,比较占系统资源</td>
+			<td style='text-align:center;'>缓存到本地的cache值</td>
+			<td style='text-align:center;'>主要是数据库失效的HASH值</td>
+		</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+body {
+  font-family:"Microsoft Yahei",Tahoma, Helvetica, Arial, "SimSun", sans-serif;
+  font-size: 15px;
+}
+#warp_index {
+  width: 100%;
+  margin-top:-30px;
+}
+#warp{
+  width: 100%;
+  margin-top:10px;
+}
+#footer {
+    bottom: 0;
+    
+    color: #eaeaea;
+    height: 36px;
+    left: 0;
+    line-height:28px;
+    text-align: left;
+    width: 100%;
+	font-size:12px;
+	border-top:1px solid #a19b9b;
+	
+	}
+#footer p {
+    margin: 0 20px;
+}
+
+#footer span {
+    color: #959595;
+    float: right;
+    font-style: normal;
+}
+#footer a {
+    color: #959595;
+    margin: 0 5px 0 3px;
+	text-decoration: none;
+}
+#weixinlk {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+.search {
+  width:621px;
+  margin: auto;
+  display: block;
+}
+.search input {
+  width: 570px;
+  height: 35px;
+  border: 2px solid #92253c;
+}
+.search_btn {
+  margin: 16px 8px;
+  border: 2px solid #dcdcdc;
+  border-color: rgba(0,0,0,0.1);
+  color: #444!important;
+  font-size: 11px;
+
+}
+#search_btn {
+  height: 35px;
+  border-color: #92253c;
+  margin-top: -35px;
+  margin-left: 580px;
+  font-size: 15px;
+  background: #f5f5f5;
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background:linear-gradient(top,#f5f5f5,#f1f1f1);
+}
+#warp > div > form > div.button {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.header span{
+  margin-left: 96%;
+}
+#keyword {
+  color: #363636;
+  height: 165px;
+  background-color: #615e5e;
+  -webkit-box-shadow: 1px 1px 3px #CFC4C4
+  -moz-box-shadow: 1px 1px 3px #413939;
+  box-shadow: 1px 1px 3px #413939;
+}
+.hide_keyword {
+  float: right;
+  margin-right: 20px;
+  color: #ffffff;
+  width: 117px;
+  height: 27px;
+  background-color: rgba(177, 158, 158, 0.21);
+  padding-top: 4px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.tags {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top:8px;
+  padding-bottom: 20px;
+  height: 115px;
+}
+.tags_a {
+  float: left;
+  height: 25px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding-top: 6px;
+}
+.menu {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  font: 13px/27px Arial,sans-serif;
+}
+.search_list input{
+  width: 550px;
+  margin-top: 15px;
+  margin-left: 5px;
+  height: 30px;
+}
+.search_list button{
+  margin-top: -5px;
+  height: 32px;
+  margin-left: 4px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+.list_div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.list {
+  /*margin-bottom: 20px;*/
+}
+.list_title {
+  font-size: 18px!important;
+  color: #1e0fbe;
+}
+.list_size {
+  float: left;
+  color: #545454;
+  line-height: 2;
+  font-size: small;
+  font-family: arial,sans-serif;
+}
+.list_date {
+  float: left;
+  margin-left: 10px;
+  color: #545454;
+  line-height: 2;
+  font-size: small;
+  font-family: arial,sans-serif;
+}
+.list_magnrtic {
+  margin-bottom: 30px;
+  line-height: 2;
+  font-size: small;
+  font-family: arial,sans-serif;
+}
+.list_magnrtic a {
+  margin-left: 10px;
+}
+.glyphicon {
+  font-size: 20px;
+  top: 0px;
+}
+.pagination {
+  float: right;
+}
+#list_td {
+  /*padding-top: 15px;*/
+}
+
+/* info */
+.info {
+  margin-top: 50px;
+}
+.btinfo {
+  margin-top: 30px;
+}
+.link {
+  margin-top: 10px;
+}
+#torrentDetail {
+  background-color: #000000;
+  margin-top: 30px;
+  color: #E5D8D8;
+}
+#torrentDetail tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-bottom: dotted #428697;
+}
+body > div > div.ad970 {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+#list_td\20 cili {
+  text-align: center;
+}
+#list_td {
+  text-align: center;
+}
+.diaobo {
+  margin-bottom: 30px;
+}
+.qr {
+  text-align: center;
+}
+.footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  font-size: smail;
+}
+#fsr {
+  margin-right: 30px;
+  float: right;
+  white-space: nowrap;
+}
+#fsl {
+  margin-left: 30px;
+  white-space: normal;
+}
+._le {
+  color: #777;
+  line-height: 40px;
+}
+.infoad {
+  margin-top: 40px;
+}

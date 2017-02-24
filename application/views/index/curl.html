@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title><?php echo $keyword;?>_种子搜索网站_www.91sobt.com</title>
+	<link href="<?php echo base_url('/public/css/bootstrap.min.css');?>" rel="stylesheet"/>
+	<link href="<?php echo base_url('/public/css/bootstrap-theme.css');?>" rel="stylesheet" />
+	<link href="<?php echo base_url('/public/css/style.css');?>" rel="stylesheet" />
+	<script src="<?php echo base_url('/public/js/jquery.min_1.9.js');?>" rel="stylesheet"></script>
+  <meta name="keywords" content="种子搜索,种子搜索网站,种子搜索神站,磁力搜索引擎,磁力搜索神站,种子搜索网站,磁力搜索引擎" />
+  <meta name="description" content="www.91sobt.com-种子搜索神站,种子搜索网站,种子搜索种子搜索,种子搜索神站,种子搜索网站,种子搜索神站,种子搜索网站,种子搜索,bt搜索,种子搜索,专注于提供种子搜索和下载服务,你可以在这里搜索和下载电影。" />
+
+        <link href="<?php echo base_url("/public/images/web.ico");?>" rel="shortcut icon" type="image/x-icon">
+    
+<!--<base target="_blank">--><base href="." target="_blank"><script src="js/share.js"></script></head>
+    
+<body>
+  <div id="warp">
+        <link href="" rel="shortcut icon" type="image/x-icon">
+        <a href="/"><img src="<?php echo base_url("/public/images/list_logo.png");?>" style="margin-left:170px;" alt="种子搜索网站" title="种子搜索网站"></a>
+
+  <div class="search" style="margin-top:-54px;">
+     
+      <form class="search_form" role="search" method="GET" action="<?php echo site_url('index/search/getinfo'); ?>">
+    
+     <input name="keyword" value="<?php echo $keyword;?>" class="form-control" autofocus="autofocus" placeholder="" x-webkit-speech="" lang="zh-CN" required="required">
+      <button class="btn search_btn" aria-label="搜一下" id="search_btn"><span>搜索</span></button>
+      </form>
+  </div>
+
+</div>
+
+
+
+<div class="container">
+	
+		<div class="navbar navbar-default" role="navigation">
+    </div>
+    <!-- 列表 -->
+   <script src="/gg/gg.js"></script>
+	<div class="history">
+		<div class="col-lg-12">
+           <h4>搜索结果</h4>
+			<table class="table table-bordered table table-hover" border="1"><tbody><tr><th id="thdn">影片名字</th>
+			
+				<th id="list_td">种子大小</th><th id="list_td">上传日期</th>
+				<th id="list_td">磁力链</th><th id="list_td">BT</th><th id="list_td">操作</th></tr>
+<?php foreach ($info as $v):?>
+				<tr><td><a style="color:black;" title="" href=""><?php echo $v['name'];?></a></td>
+
+					<td id="list_td"><?php echo substr($v['size'],0,20);?></td>
+          <td id="list_td"><?php echo $v['date'];?></td>
+					<td id="list_td cili"><a class="btn btn-success" href="http://www.sobt.org/Tool/downbt?info=<?php echo $v['url'];?>"> 下载</a><a></a></td>
+
+					<td id="list_td cili"><a class="btn btn-success" href="<?php echo $v['url'];?>">下载</a></td><td id="list_td"><a href="" target="_blank" class="btn btn-success">详情</a></td></tr>
+<?php endforeach ?>
+
+
+</tbody></table>			</div>
+		</div>
+
+
+		<ul class="pagination next">
+    <?php
+    if (!empty($counts) && !empty($page) && $counts > $page) {
+      $pages = $page + 1;
+      $pagesend = $page - 1;
+
+      echo '<ul class="pagination next">';
+      echo '<li><a href="getinfo.html?keyword='.$keyword.'&counts='.$counts.'&page='.$pagesend.'">上一页</a></li>';
+      echo '<li><a href="getinfo.html?keyword='.$keyword.'&counts='.$counts.'&page='.$pages.'">下一页</a></li>';
+      echo '<li><a href="#">&raquo;</a></li></ul>';
+
+    } elseif (isset($page) && $page == $counts) {
+
+      $pagesend = $page - 1;
+
+      echo '<ul class="pagination next">';
+      echo '<li><a href="getinfo.html?keyword='.$keyword.'&counts='.$counts.'&page='.$pagesend.'">上一页</a></li>';
+      echo '<li><a href="">最后一页</a></li>';
+
+    } elseif ($counts > 1) {
+
+      echo '<ul class="pagination next">';
+      echo '<li><a href="getinfo.html?keyword='.$keyword.'&counts='.$counts.'&page=2">下一页</a></li>';
+      echo '<li><a href="#">&raquo;</a></li></ul>';
+    }
+    ?>
+
+    </ul>	
+
+<!-- 网站底部页码结束 -->
+	</div>
+	<!-- 网站主体结束 -->
+<div id="footer" style="">
+    <p>
+        <span>（2014宅男腐女必备神器）Copyright&nbsp;©&nbsp;91sobt.com&nbsp;&nbsp;粤ICP备65865623号-10&nbsp;&nbsp;</span>
+        <a data-linkid="1" href="http://m.91sobt.com/">手机访问</a>|
+        <a id="weixinlk" href="http://www.91sobt.com/help/">搜索番号<span></span></a>|
+        <a data-linkid="4" href="http://www.91sobt.com/read/">使用说明</a>|
+        <a data-linkid="2" href="http://www.91sobt.com/getinfo.html?keyword=%E4%B8%9D%E8%A2%9C#">今日热搜</a>|
+        <a data-linkid="3" href="http://www.91sobt.com/getinfo.html?keyword=%E4%B8%9D%E8%A2%9C#">关于我们</a>|
+        
+        <a data-linkid="4" href="http://www.91sobt.com/read/">使用帮助</a>|
+
+           <a data-linkid="5" href="http://www.91sobt.com/getinfo.html?keyword=%E4%B8%9D%E8%A2%9C#">广告合作</a><span style="color:red;">[磁力链下载恢复正常]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </p>
+		
+</div>
+
+<div style="display:none;">
+种子搜索,种子搜索网站,种子搜索神器,bt搜索,磁力搜索,磁力链,p2p搜索神器,种子搜索神站,upbt.net,shousibaocai.com,bt搜索神站,bt站,番号搜索,番号列表,女优番号,女优种子,女优bt
+</div>
+</body></html>

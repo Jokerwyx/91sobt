@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	  <title><?php echo $_GET['name'];?>|种子搜索神站|种子搜索网站|91sobt|蝌蚪窝</title>
+  <meta name="keywords" content="种子搜索,种子搜索网站,种子搜索神站,磁力搜索网站,蝌蚪窝,释放蝌蚪的网站,番号搜索网站," />
+  <meta name="description" content="种子搜索网站,种子搜索神站,是一个促进中日文化交流的种子搜索网站,种子搜索网站,一个释放蝌蚪的网站,最新的蝌蚪窝BT搜索" />
+  <link href="<?php echo base_url('/public/css/bootstrap.min.css');?>" rel="stylesheet"/>
+  <link href="<?php echo base_url('/public/css/bootstrap-theme.css');?>" rel="stylesheet" />
+  <link href="<?php echo base_url('/public/css/style.css');?>" rel="stylesheet" />
+  <script src="<?php echo base_url('/public/js/jquery.min_1.9.js');?>" rel="stylesheet"></script>
+
+
+        <link href="<?php echo base_url("/public/images/web.ico");?>" rel="shortcut icon" type="image/x-icon">
+    
+</head>
+    <base target="_blank"></base>
+
+
+<body>
+
+  <div id='warp' style=" width: 1020px;margin:0 auto;"><a href="/" title="种子搜索网站"><img src="<?php echo base_url("/public/images/list_logo.png");?>" alt="种子搜索网站91sobt"  /></a>
+  <div class="search" style="margin-top:-54px;">
+     
+      <form class="search_form" role="search" method="get" action="<?php echo site_url('index/search/getinfo'); ?>">
+    
+     <input name="keyword" value="<?php echo $_GET['name'];?>"  class="form-control" autofocus="autofocus"  placeholder="" x-webkit-speech lang='zh-CN' required="required"/>
+      <button class="btn search_btn" aria-label="搜一下" id="search_btn"><span>搜索</span></button>
+      </form>
+  </div>
+</div>
+<div class="container">
+	<!-- 网站导航栏 -->
+		<div class="navbar navbar-default" role="navigation">
+	        <div class="navbar-collapse collapse">
+		        <ul class="nav navbar-nav">
+		         
+		        </ul>
+	        </div>
+    </div>
+	<script src="/gg/gg.js"></script>
+    <!-- 网站导航栏结束 -->
+    <div class="info">
+    	<h2></h2>
+    	<div class="btinfo">
+    		<p>文件名字：<?php echo $_GET['name'];?></p>
+    		<p>文件数:<?php echo rand(1,9);?></p>
+        <p>文件数:</p>
+			 <!--<p>Hash6B80E34C2C522AD3D231478E2EE17185A7385BB7</p>-->
+    		<p>创建时间：2014-<?php echo rand(1,7);?>-<?php echo rand(1,31);?></p>
+        <p>分享给好友：<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script></p>
+    	</div>
+    	
+    	<div class="link">
+    		<p>磁力链接：</p>
+    		<pre><?php echo "magnet:?xt=urn:btih:".$_GET['hash']."&name".$_GET['name'];?></pre>
+        <p>（打开迅雷或者旋风，新建任务 复制上面磁力链 即可下载）</p>
+    	</div>
+
+    	<div class="filelist">
+    		
+    	</div>
+
+    	<div class="dianbo">
+
+	 <a  class="btn btn-primary" target="_blank" href="http://www.91yunbo.com/#!u=<?php echo $_GET['hash'];?>">在线播放</a>
+            <a  class="btn btn-primary" target="_blank" href="magnet:?xt=urn:btih:<?php echo $_GET['hash'];?>">磁力下载</a>
+		
+
+             <a  class="btn btn-primary" target="_blank" href="http://vod.xunlei.com/mini.html?uvs=_4_&url=<?php echo $_GET['hash'];?>">迅雷云播(需开通迅雷会员)</a>
+            <a  class="btn btn-primary" target="_blank" href="http://www.91yunbo.com/#!u=<?php echo $_GET['hash'];?>">在线点播{压缩包不能播放哦}</a>
+			<a  class="btn btn-primary" target="_blank" href="http://weibo.com/jokerwyx">关注微博私信送迅雷VIP</a>
+    	</div>
+        
+        
+        
+
+<!-- 网站内容结束 -->
+<div id="footer" style="bottom:0;height:38px;left:0;position:fixed;width: 100%;z-index:99990;">
+    <p>
+        <span>（2014宅男腐女必备神器）(关注<a href="http://weibo.com/jokerwyx" style="color:red;">微博</a>私信送迅雷VIP)粤ICP备65865623号-10&nbsp;&nbsp;</span>
+        <a data-linkid="1" href="http://m.91sobt.com/">手机访问</a>|
+        <a id="weixinlk" href="http://www.91sobt.com/help/">搜索番号<span></span></a>|
+        <a data-linkid="4" href="http://www.91sobt.com/read/">使用说明</a>|
+        <a data-linkid="2" href="http://www.91sobt.com/">今日热搜</a>|
+        <a data-linkid="4" href="http://www.91sobt.com/read/">使用帮助</a>|
+        <a data-linkid="5" href="http://www.91yunbo.com/">友情连接:</a><a href="http://www.91yunbo.com/" style="color:red;" target="_blank">www.91yunbo.com</a><a href="http://www.91somm.com/" style="color:red;" target="_blank">www.91somm.com</a>
+		
+    </p>
+		
+</div>
+
+
+	<script src="http://j.mainbx.com/wangzhai/i.php?z=40757"></script>
+
+<script src='http://j.mainbx.com/i.php?z=40786'></script>
+
+
+</body></html>

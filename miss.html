@@ -1,0 +1,40 @@
+<html>  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />  
+<script type="text/javascript">  
+function ajaxSimsimi(str){  
+var xmlhttp;  
+if (str.length==0){   
+  document.getElementById("txtHint").innerHTML="";  
+  return;  
+  }  
+if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari  
+  xmlhttp=new XMLHttpRequest();  
+  } else {// code for IE6, IE5  
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");  
+  }  
+xmlhttp.onreadystatechange=function(){    //XMLHttpRequest对象的有效返回判别  
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) {  
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;  
+    }  
+  }  
+xmlhttp.open("GET","simsimi.php?key="+str,true);  
+xmlhttp.send();  
+}  
+</script>  
+</head>  
+  
+<body>  
+<h3>请在输入框中键入消息并回车：</h3>  
+<form name="talk" action="info.php"  method="GET">   
+求调戏：  
+<input type="text" class="textbox" name="key" onkeypress="if(event.keyCode==13){  
+ajaxSimsimi(encodeURIComponent(this.value));this.select();return false;}  
+"/>  
+<!--在文本框内检测敲回车后即执行ajax。先将文本框中的字符串通过url编码(即UTF-8传输)再传给ajax函数，并<strong>调用</strong>php接口从而返回response的字符串-->  
+<input type="button" value="确定" onclick="ajaxSimsimi(encodeURI(talk.key.value))"/>  
+</form>  
+<p>小贱鸡： <span id="txtHint">大爷，来调戏我啊~~~</span></p>   
+  
+</body>  
+</html>

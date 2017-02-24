@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() . '/style/admin/css/public.css' ?>">
+	<title>Document</title>
+	<style type="text/css">
+		span{
+			color: #f00;
+		}
+	</style>
+</head>
+<body>
+	<form action="<?php echo site_url('admin/article/ftojp') ?>" method="POST">
+	<table class="table">
+		<tr>
+			<td class="th" colspan="10">简繁转换</td>
+		</tr>
+		<tr>
+			<td>繁体文字</td>
+			<td><input type="text" name="ftinfo" value="" style="width:400px;"/><font style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;*</font></td>
+		</tr>
+		<tr>
+			<td>简体文字</td>
+			<td><input type="text" name="jtinfo" value="" style="width:400px;"/><font style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;*</font></td>
+		</tr>
+	
+		<tr>
+			<td>某些电影多为繁体字，用户搜索的是简体。</td>
+		</tr>
+		<tr>
+			<td colspan="10"><input type="submit" value="转换" class="input_button"/></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

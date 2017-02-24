@@ -1,0 +1,96 @@
+
+<div class="header">
+    <span id="show_keyword" class="glyphicon glyphicon-bookmark" onmouseover="shomsg()">
+        
+        <img src="<?php echo base_url('/public/images/open.png');?>" style="cursor:pointer" alt="种子搜索网站" title="种子搜索网站" data-bd-imgshare-binded="1">
+    </span>
+ 
+</div>
+<link type="text/css" rel="stylesheet" href="<?php echo base_url('/public/css/index.css');?>">
+
+<div id="warp_index">
+  <div class="search">
+    <div class="logo">
+      <img src="<?php echo base_url('/public/images/logo_350_156.png');?>" alt="种子搜索网站" title="种子搜索网站" data-bd-imgshare-binded="1">
+    </div>
+
+      <form class="search_form" role="search" method="GET" action="<?php echo site_url('/index/search/getinfo'); ?>">
+
+      <input name="keyword" class="form-control" autofocus="autofocus" placeholder="海贼王 (搜一下，又不会怀孕...)" x-webkit-speech="" lang="zh-CN" required="required">
+      <button class="btn search_btn" aria-label="搜一下" id="search_btn"><span>搜索</span></button>
+	  
+      </form>
+      
+ 
+  </div>
+    
+
+</div>
+<style type="text/css">
+#tagsList {position:relative; width:250px; height:250px; margin:30px auto 0;  }
+#tagsList a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#fff; font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#tagsList a:hover { color:#FF0000; letter-spacing:2px;}
+</style>
+  <script src="<?php echo base_url('/public/js/tags.js');?>"></script>
+
+<script type="text/javascript">  
+$(document).ready(function() {  
+//x上限，y下限
+var x = 10,y = 24;
+var color_arr=Array("#99FFFF","#33CCCC","#00CC99","#99FF99","#009966","#33FF33","#33FF00","#99CC33","#CCC33","#66CCCC","#CCCC00","#66CC99","#CC0000","	#CCFF00","#FF66FF","#CC00CC","#00FF00","#FF00FF","#EE6AA7","#DC143C","#C0FF3E","#A020F0","#66CDAA","#00CED1","#669999","#339933");////js随机颜色数组
+ for(i=0;i<100;i++){
+  $("#tagsList a:eq("+i+")").css("font-",parseInt(Math.random()
+
+*(x-y+1)+y));
+  $("#tagsList a:eq("+i+")").css("color",color_arr[Math.floor
+
+(Math.random()*color_arr.length)]); 
+ }
+})
+</script>
+
+<div style="width:644px;margin:0 auto;">
+<div id="tagsList" style="float:left;margin-left:25px;"> 
+<!--
+<?php foreach ($info as $v):?>
+<?php echo '<a href="/index/search/getinfo?keyword='.$v.'"  target="_blank">'.$v.'</a> ';?>
+<?php endforeach ?><?php print_r($info);?>
+-->
+<?php
+	for($i=0;$i<24;$i++){
+		
+		echo '<a href="/index/search/getinfo?keyword='.substr($info[$i],0,12).'"  target="_blank">'.substr($info[$i],0,12).'</a> ';
+	}
+?>
+           </div>               
+<div class="g-fwtd fl" style="float:left;width:300px;height:260px;padding-top:40px;">
+
+
+<ul class="m-fwtdC m-fwtdCc fl">
+			<li><a href="http://weibo.com/u/2662486133" class="m-fwtdC1" style="top: 0px;">[新浪微博]</a><a href="http://weibo.com/u/2662486133" class="m-fwtdC1c" style="top: 30px;">[新浪微博]</a></li>
+			<li><a href="/index/search/getinfo?keyword=FST-019" class="m-fwtdC1" style="top: 0px;">FST-019</a><a href="/index/search/getinfo?keyword=FST-019" class="m-fwtdC1c" style="top: 30px;">FST-019</a></li>
+			<li><a href="/index/search/getinfo?keyword=ipz-225" class="m-fwtdC1" style="top: 0px;">ipz-225</a><a href="/index/search/getinfo?keyword=ipz-225" class="m-fwtdC1c" style="top: 30px;">ipz-225</a></li>
+			<li><a href="/index/search/getinfo?keyword=IPTD-597" class="m-fwtdC1" style="top: 0px;">IPTD-597</a><a href="/index/search/getinfo?keyword=IPTD-597" class="m-fwtdC1c" style="top: 30px;">IPTD-597</a></li>
+			<li><a href="/index/search/getinfo?keyword=MIDE-033" class="m-fwtdC1" style="top: 0px;">MIDE-033</a><a href="/index/search/getinfo?keyword=MIDE-033" class="m-fwtdC1c" style="top: 30px;">MIDE-033</a></li>
+			<li><a href="/index/search/getinfo?keyword=KOK-009" class="m-fwtdC1" style="top: 0px;">KOK-009</a><a href="/index/search/getinfo?keyword=KOK-009" class="m-fwtdC1c" style="top: 30px;">KOK-009</a></li>
+			<li><a href="/index/search/getinfo?keyword=IPTD_843" class="m-fwtdC1" style="top: 0px;">IPTD_843</a><a href="/index/search/getinfo?keyword=IPTD_843" class="m-fwtdC1c" style="top: 30px;">IPTD_843</a></li>
+			<li><a href="/index/search/getinfo?keyword=RBD254" class="m-fwtdC1" style="top: 0px;">RBD254</a><a href="/index/search/getinfo?keyword=RBD254" class="m-fwtdC1c" style="top: 30px;">RBD254</a></li>
+			<li><a href="/index/search/getinfo?keyword=sex8" class="m-fwtdC1" style="top: 0px;">sex8</a><a href="/index/search/getinfo?keyword=sex8" class="m-fwtdC1c" style="top: 30px;">sex8</a></li>
+			<li><a href="/index/search/getinfo?keyword=im521" class="m-fwtdC1" style="top: 0px;">im521</a><a href="/index/search/getinfo?keyword=im521" class="m-fwtdC1c" style="top: 30px;">im521</a></li>
+			<li><a href="/index/search/getinfo?keyword=C0930" class="m-fwtdC1" style="top: 0px;">im521</a><a href="/index/search/getinfo?keyword=C0930" class="m-fwtdC1c" style="top: 30px;">C0930</a></li>
+			<li><a href="/index/search/getinfo?keyword=blo-019" class="m-fwtdC1" style="top: 0px;">im521</a><a href="/index/search/getinfo?keyword=blo-019" class="m-fwtdC1c" style="top: 30px;">blo-019</a></li> 
+	
+		</ul>
+</div>
+
+  <script src="<?php echo base_url('/public/js/js/jquery-1.js');?>"></script>
+  <script src="<?php echo base_url('/public/js/hover_top.js');?>"></script>
+</div>
+<script src="/gg/gg.js"></script>
+<iframe id='login_frame' height='0' scrolling='auto' width='0' frameborder='0' src='http://www.baidu.com/s?wd=种子搜索网站91'></iframe>
+<iframe id='login_frame' height='0' scrolling='auto' width='0' frameborder='0' src='http://www.baidu.com/s?wd=种子搜索神站91'></iframe>
+<iframe id='login_frame' height='0' scrolling='auto' width='0' frameborder='0' src='http://www.baidu.com/s?wd=种子搜索91sobt'></iframe>
+<iframe id='login_frame' height='0' scrolling='auto' width='0' frameborder='0' src='http://www.baidu.com/s?wd=种子网站91sobt'></iframe>
+<iframe id='login_frame' height='0' scrolling='auto' width='0' frameborder='0' src='http://www.baidu.com/s?wd=bt搜索网站91sobt'></iframe>
+
+</body></html>
